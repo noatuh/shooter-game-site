@@ -30,3 +30,31 @@ header a, .download-btn {
 header a:hover, .download-btn:hover {
     background: #0057b8;
 }
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.game-img {
+    float: left;
+    /* Remove inline styles for width in your HTML if you use this */
+    width: 50%; /* Adjust as necessary */
+    padding-top: 50px; /* Adjust as necessary */
+    margin-right: 60px;
+}
+
+.download-btn {
+    display: inline-block; /* Change to inline-block for more control over width */
+    width: auto; /* Auto width based on content, or you can set a specific width */
+    padding: 10px 20px; /* Adjust padding to increase or decrease size */
+    text-align: center; /* This will center the text inside the button */
+    margin: 0 10px 10px 0; /* Adjust margin for spacing around the button */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    /* Add other styles like background, color, border as needed */
+}
+
+.download-links {
+    /* ... other styles ... */
+    text-align: center; /* This will center the buttons within the .download-links div */
+}
